@@ -1,0 +1,28 @@
+/* Estilo */
+.contmain {
+    margin-bottom: 50 px;
+}
+.forms {
+    margin-bottom: 50px;
+}
+.contactos {
+    margin-top: 100px;
+}
+/* Grids para HTML "Contacto" */
+.contactanos {
+    grid-area: cont;
+}
+.mail {
+    grid-area: mail;
+}
+.tel {
+    grid-area: tel;
+}
+.contactos {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: 
+    "cont cont"
+    "mail tel";
+    }

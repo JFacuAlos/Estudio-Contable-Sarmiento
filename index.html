@@ -4,47 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="keywords" content="estudio contable">
+    <meta name="description" content="Estudio contable Sarmiento. ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
     <title>EstudioSarmiento</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="./section/nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="./section/servicios.html">SERVICIOS</a>
-                </li>
-                <li>
-                    <a href="./section/blog.html">BLOG</a>
-                </li>
-                <li>
-                    <a href="./section/contacto.html">CONTACTO</a>
-                </li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./section/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="./section/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="./section/blog.html">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="./section/contacto.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contacto
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./section/contacto.html">Dejanos tu consulta</a></li>
+                <li><a class="dropdown-item" href="./section/contacto.html">Trabajá con nosotros</a></li>
+                </ul>
+            </li>
             </ul>
-        </nav>
-    </header>
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Palabras clave" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
+        </div>
+    </nav>
 
-    <main>
-        <img id="mesa" src="./img/MesaEcS.jpeg" width="200" height="200" alt="Reuniones">
+    <main class="container-fluid">
+        <img class="img-fluid" id="mesa" src="./img/MesaEcS.jpeg" width="200" height="200" alt="Reuniones">
         <h1>Estudio contable Sarmiento</h1>
         <p id="esp">Nos especializamos en impuestos, sueldos, estados contables, auditorías, proyectos de inversión y capacitaciones de empleados administrativos.</p>
     </main>
 
-    <section>
-        <h1>Página de la Federación Argentina de Consejos Profesionales de Ciencias Económicas: 
-            <a id="linkfacpce" href="https://www.facpce.org.ar/" target="_blank">FACPCE</a></h1>
-    </section>
-<section>
-    <article>
-        <h1 id="music">Hania Rani en París</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/J5oZ80Daduc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </article>
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h1 id="music">Hania Rani en París</h1>
+            <iframe id="musicv" width="560" height="315" src="https://www.youtube.com/embed/J5oZ80Daduc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="container fluid col-lg-6 col-md-6 col-sm-12">
+        <h1 id="linkfa">
+            <a id="linkfacpce" href="https://www.facpce.org.ar/" target="_blank">Página de la Federación Argentina de Consejos Profesionales de Ciencias Económicas</a>
+        </h1>
+        </div>
+</div>
 </section> 
     <footer>
         <div class="redes">
@@ -53,5 +72,6 @@
             <a href="https://www.facebook.com/" target="_blank"> <img src="./img/icons8-facebook-nuevo.svg" alt="Facebook"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

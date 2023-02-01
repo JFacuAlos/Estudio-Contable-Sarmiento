@@ -1,0 +1,392 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap");
+/* Estilo general */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: rgb(137, 155, 159);
+  background-image: 1;
+  box-sizing: border-box;
+}
+
+main {
+  text-align: center;
+  background-color: rgb(143, 157, 160);
+  padding: 40px;
+  margin: 10px 30px 10px 30px;
+  border: 2px solid black;
+}
+
+p {
+  padding: 10px;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  color: black;
+  margin-top: 1px;
+  margin-right: 40px;
+  margin-left: 40px;
+  border: solid black 1px;
+  border-color: black;
+  background-color: rgb(242, 242, 242);
+}
+
+h1 {
+  text-align: center;
+  background-color: rgb(143, 157, 160);
+  padding: 20px;
+  margin: 10px 30px 10px 30px;
+  border: 2px solid black;
+}
+
+h2 {
+  text-align: left;
+  font-style: italic;
+  padding: 10px;
+  margin: 40px 20px 10px 1px;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  height: 5 px;
+  background-color: rgb(143, 157, 160);
+}
+
+section {
+  margin-top: 30px;
+}
+
+article {
+  text-align: center;
+  background-color: rgb(137, 155, 159);
+  padding: 40px;
+  margin: 10px 20px 10px 20px;
+}
+
+/* Footer */
+.pcv {
+  position: relative;
+  bottom: 0%;
+  margin-bottom: 0px;
+}
+
+/* Quiebres */
+@media (min-width: 500px) {
+  h1 {
+    background: rgb(143, 157, 160);
+  }
+  h2 {
+    color: white;
+  }
+  .grillaServicios {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .gridsNosotros {
+    display: grid;
+    grid-template-areas: "miembros1 miembros2" "miembros3 miembros4";
+    grid-template-columns: 50% 50%;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    background: white;
+  }
+}
+h2 {
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    background: none;
+  }
+  h2 {
+    color: black;
+  }
+}
+/* Estilo */
+#mesa {
+  border: 10px double black;
+  border-radius: 10%;
+}
+
+#linkfacpce {
+  text-decoration: underline;
+  color: black;
+}
+
+#linkfa {
+  margin-top: 148px;
+}
+
+#music {
+  color: black;
+  padding: 1px;
+  text-align: center;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  border: 1px black;
+}
+
+#musicv {
+  width: 100%;
+  padding: 1px;
+  text-align: center;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  border: 1px black;
+}
+
+/* Animaciones, transformaciones y transiciones */
+#linkfacpce {
+  transition: all 2s;
+}
+
+#linkfacpce:hover {
+  border: 1px solid blue;
+}
+
+/* Estilo */
+#Adam {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  border: 10px double black;
+  border-radius: 10%;
+}
+
+/* Estilo */
+.contmain {
+  margin-bottom: 50 px;
+}
+
+.forms {
+  margin-bottom: 50px;
+}
+
+.contactos {
+  margin-top: 100px;
+}
+
+/* Grids para HTML "Contacto" */
+.contactanos {
+  grid-area: cont;
+}
+
+.mail {
+  grid-area: mail;
+}
+
+.tel {
+  grid-area: tel;
+}
+
+.contactos {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "cont cont" "mail tel";
+}
+
+/* Estilo */
+#JuanS {
+  width: 50px;
+}
+
+#Jf {
+  width: 50px;
+}
+
+#Fd {
+  width: 50px;
+}
+
+#Diego {
+  width: 50px;
+}
+
+/* Grids para HTML "Nosotros" */
+.gridsNosotros {
+  display: grid;
+  grid-template-columns: 50%;
+}
+
+.miembroJ {
+  grid-area: miembroJ;
+}
+
+#JuanS {
+  grid-area: JuanS;
+}
+
+.infomiembroJ {
+  grid-area: imj;
+}
+
+.miembroJf {
+  grid-area: miembroJf;
+}
+
+#Jf {
+  grid-area: Jf;
+}
+
+.infomiembroJf {
+  grid-area: imjf;
+}
+
+.miembroF {
+  grid-area: miembroF;
+}
+
+#Fd {
+  grid-area: Fd;
+}
+
+.infomiembroF {
+  grid-area: imF;
+}
+
+.miembroD {
+  grid-area: miembroD;
+}
+
+#Diego {
+  grid-area: Diego;
+}
+
+.infomiembroD {
+  grid-area: infoD;
+}
+
+.miembros1 {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "JuanS miembroJ " "imj imj";
+}
+
+.miembros2 {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "Jf miembroJf" "imjf imjf";
+}
+
+.miembros3 {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "Fd miembroF" "imF imF";
+}
+
+.miembros4 {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "Diego miembroD" "infoD infoD";
+}
+
+/* Estilo */
+.infomiembroD, .infomiembroJ, .infomiembroJf, .infomiembroF {
+  text-align: left;
+  background-color: beige;
+  border: none;
+}
+
+.servicios {
+  text-align: left;
+}
+
+/* Animaciones, transformaciones y transiciones */
+#Diego:hover {
+  transform: scale(2);
+}
+
+#JuanS:hover {
+  transform: scale(2);
+}
+
+#Jf:hover {
+  transform: scale(2);
+}
+
+#Fd:hover {
+  transform: scale(2);
+}
+
+#Diego, #JuanS, #Jf, #Fd {
+  transition-property: all;
+  transition-duration: 3s;
+}
+
+.servicios:hover {
+  height: 100px;
+  background-color: white;
+  color: black;
+}
+
+.servicios {
+  transition-property: all;
+  transition-duration: 3s;
+}
+
+/* Parámetros Grids de "Servicios" (y parte de "Nosotros", con .gridContainer)*/
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.gridContainer {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas: "header header" "main main" "footer footer";
+  gap: 10px;
+}
+
+.grillaServicios {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+#imgtrib {
+  width: 250px;
+}
+
+#imgaud {
+  width: 250px;
+}
+
+#imgsoc {
+  width: 250px;
+  height: 159px;
+}
+
+#imgpdi {
+  width: 250px;
+  height: 159px;
+}/*# sourceMappingURL=estilos.css.map */

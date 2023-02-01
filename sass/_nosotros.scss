@@ -1,0 +1,86 @@
+/* Estilo */
+#JuanS {
+    width: 50px;
+}
+#Jf {
+    width: 50px
+}
+#Fd {
+    width: 50px;
+}
+#Diego {
+    width: 50px;
+}
+/* Grids para HTML "Nosotros" */
+.gridsNosotros{
+    display: grid;
+    grid-template-columns: 50%;
+}
+.miembroJ {
+    grid-area: miembroJ;
+}
+#JuanS {
+grid-area: JuanS;
+}
+.infomiembroJ {
+grid-area: imj;
+}
+.miembroJf {
+    grid-area: miembroJf;
+}
+#Jf {
+    grid-area: Jf;
+}
+.infomiembroJf {
+    grid-area: imjf;
+}
+.miembroF {
+    grid-area: miembroF;
+}
+#Fd {
+    grid-area: Fd;
+}
+.infomiembroF {
+    grid-area: imF;
+}
+.miembroD {
+    grid-area: miembroD;
+}
+#Diego {
+    grid-area: Diego;
+}
+.infomiembroD {
+    grid-area: infoD;
+}
+.miembros1 {
+display: grid;
+width: 100%;
+height: 100%;
+grid-template-areas: 
+"JuanS miembroJ "
+"imj imj";
+}
+.miembros2 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+    "Jf miembroJf"
+    "imjf imjf";
+}
+.miembros3 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+    "Fd miembroF"
+    "imF imF";
+}
+.miembros4 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+    "Diego miembroD"
+    "infoD infoD";
+}

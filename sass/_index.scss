@@ -1,0 +1,33 @@
+/* Estilo */
+#mesa {
+    border: 10px double black;
+    border-radius: 10%;
+}
+#linkfacpce{
+    text-decoration: underline;
+    color: black;
+}
+#linkfa {
+    margin-top: 148px;
+}
+#music{
+    color: black;
+    padding: 1px;
+    text-align: center;
+    text-decoration: solid;
+    border: 1px black;
+}
+#musicv{
+    width: 100%;
+    padding: 1px;
+    text-align: center;
+    text-decoration: solid;
+    border: 1px black;
+}
+/* Animaciones, transformaciones y transiciones */
+#linkfacpce{
+    transition: all 2s;
+}
+#linkfacpce:hover {  
+border: 1px solid blue;  
+}

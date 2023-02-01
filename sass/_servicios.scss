@@ -1,0 +1,72 @@
+/* Estilo */
+.infomiembroD, .infomiembroJ, .infomiembroJf, .infomiembroF{
+    text-align: left;
+    background-color: beige;
+    border: none;
+}
+.servicios{
+    text-align: left;
+}
+/* Animaciones, transformaciones y transiciones */
+#Diego:hover {
+    transform: scale(2)
+}
+#JuanS:hover {
+    transform: scale(2);
+}
+#Jf:hover {
+    transform: scale(2);
+}
+#Fd:hover {
+    transform: scale(2);
+}
+#Diego, #JuanS, #Jf, #Fd {
+    transition-property: all;
+    transition-duration: 3s;
+}
+.servicios:hover {
+height: 100px;
+background-color: white;
+color: black;
+}
+.servicios {
+    transition-property: all;
+    transition-duration: 3s;
+}
+/* Parámetros Grids de "Servicios" (y parte de "Nosotros", con .gridContainer)*/
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+footer{
+    grid-area: footer ;}
+.gridContainer {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+grid-template-areas:
+"header header"
+"main main"
+"footer footer";
+gap: 10px;
+}
+.grillaServicios {
+    display: grid;
+    grid-template-columns: 100%;
+}
+#imgtrib {
+    width: 250px;
+}
+#imgaud {
+    width: 250px;
+}
+#imgsoc {
+    width: 250px;
+    height: 159px;
+}
+#imgpdi {
+    width: 250px;
+    height: 159px;
+}
