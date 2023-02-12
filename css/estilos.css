@@ -8,6 +8,7 @@
   background-color: rgb(137, 155, 159);
   background-image: 1;
   box-sizing: border-box;
+  font-size: large;
 }
 
 main {
@@ -18,36 +19,18 @@ main {
   border: 2px solid black;
 }
 
-p {
-  padding: 10px;
-  text-align: justify;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 40px;
-  letter-spacing: 1px;
-  word-spacing: 3px;
-  color: black;
-  margin-top: 1px;
-  margin-right: 40px;
-  margin-left: 40px;
-  border: solid black 1px;
-  border-color: black;
-  background-color: rgb(242, 242, 242);
-}
-
 h1 {
   text-align: center;
   background-color: rgb(143, 157, 160);
   padding: 20px;
-  margin: 10px 30px 10px 30px;
+  margin: 10px 0px 10px 0px;
   border: 2px solid black;
 }
 
 h2 {
   text-align: left;
   font-style: italic;
+  font-size: 15px;
   padding: 10px;
   margin: 40px 20px 10px 1px;
   color: black;
@@ -62,6 +45,23 @@ footer {
 
 section {
   margin-top: 30px;
+}
+section p {
+  padding: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 40px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  color: black;
+  margin-top: 1px;
+  margin-right: 40px;
+  margin-left: 40px;
+  border: solid black 1px;
+  border-color: black;
+  background-color: rgb(242, 242, 242);
 }
 
 article {
@@ -84,7 +84,8 @@ article {
     background: rgb(143, 157, 160);
   }
   h2 {
-    color: white;
+    font-style: italic;
+    font-size: larger;
   }
   .grillaServicios {
     display: grid;
@@ -104,14 +105,13 @@ article {
   }
 }
 @media (min-width: 768px) {
-  h1 {
-    background: white;
+  h1, h2, p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  h2 {
+    font-style: italic;
   }
 }
-h2 {
-  color: white;
-}
-
 @media (min-width: 1024px) {
   h1 {
     background: none;
@@ -124,6 +124,10 @@ h2 {
 #mesa {
   border: 10px double black;
   border-radius: 10%;
+}
+
+#segundaparteindex {
+  border: 2px solid black;
 }
 
 #linkfacpce {
@@ -169,6 +173,7 @@ h2 {
   margin-top: 10px;
   border: 10px double black;
   border-radius: 10%;
+  background-color: black;
 }
 
 /* Estilo */
@@ -182,26 +187,12 @@ h2 {
 
 .contactos {
   margin-top: 100px;
+  margin: auto;
+  text-justify: auto;
 }
 
-/* Grids para HTML "Contacto" */
-.contactanos {
-  grid-area: cont;
-}
-
-.mail {
-  grid-area: mail;
-}
-
-.tel {
-  grid-area: tel;
-}
-
-.contactos {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  grid-template-areas: "cont cont" "mail tel";
+.gridscontacto {
+  margin: auto;
 }
 
 /* Estilo */
@@ -219,6 +210,12 @@ h2 {
 
 #Diego {
   width: 50px;
+}
+
+.infomiembroD, .infomiembroJ, .infomiembroJf, .infomiembroF {
+  text-align: left;
+  background-color: whitesmoke;
+  border: none;
 }
 
 /* Grids para HTML "Nosotros" */
@@ -304,14 +301,10 @@ h2 {
 }
 
 /* Estilo */
-.infomiembroD, .infomiembroJ, .infomiembroJf, .infomiembroF {
-  text-align: left;
-  background-color: beige;
-  border: none;
-}
-
 .servicios {
   text-align: left;
+  padding: 15px;
+  font-size: medium;
 }
 
 /* Animaciones, transformaciones y transiciones */

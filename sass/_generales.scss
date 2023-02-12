@@ -8,6 +8,7 @@
     background-color: rgb(137, 155, 159);
     background-image: random($limit: 1);
     box-sizing: border-box;
+    font-size: large;
 }
 main {
     text-align: center;
@@ -15,35 +16,19 @@ main {
     padding: 40px;;
     margin: 10px 30px 10px 30px;
     border: 2px solid black
+    
 }
-p {
-    padding: 10px;
-    text-align: justify;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 40px;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-    color: black;
-    margin-top: 1px;
-    margin-right: 40px;
-    margin-left: 40px;
-    border: solid black 1px;
-    border-color: black;
-    background-color: rgb(242, 242, 242);
-} 
 h1{
     text-align: center;
     background-color: $color;
     padding: 20px;;
-    margin: 10px 30px 10px 30px;
+    margin: 10px 0px 10px 0px;
     border: 2px solid black;
 }
 h2{
     text-align: left;
     font-style: italic;
+    font-size: 15px;
     padding: 10px;;
     margin: 40px 20px 10px 1px;
     color: black;
@@ -56,6 +41,23 @@ footer{
 }
 section{
     margin-top: 30px;
+    p {
+        padding: 10px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 40px;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+        color: black;
+        margin-top: 1px;
+        margin-right: 40px;
+        margin-left: 40px;
+        border: solid black 1px;
+        border-color: black;
+        background-color: rgb(242, 242, 242);
+    } 
 }
 article{
     text-align: center;
@@ -76,7 +78,8 @@ article{
         background: $color;
     }
     h2 {
-        color: white;
+        font-style: italic;
+        font-size: larger;
     }
     .grillaServicios {
         display: grid;
@@ -98,11 +101,11 @@ article{
     }
 }
 @media (min-width: 768px) {
-    h1 {
-        background: white}
-}
+h1, h2, p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 h2 {
-    color: white;
+    font-style: italic;
+}
 }
 @media(min-width: 1024px){
     h1 {
